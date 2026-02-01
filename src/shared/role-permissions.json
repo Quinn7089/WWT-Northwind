@@ -1,0 +1,46 @@
+{
+  "permissions": {
+    "canViewHome": "canViewHome",
+    "canViewManageUsers": "canViewManageUsers",
+    "canViewManageRoles": "canViewManageRoles",
+    "canAddUsers": "canAddUsers",
+    "canEditUsers": "canEditUsers",
+    "canAddRoles": "canAddRoles",
+    "canEditRoles": "canEditRoles"
+  },
+  "roles": {
+    "temp": {
+      "permissions": [
+        "canViewHome"
+      ]
+    },
+    "User": {
+      "permissions": [
+        "canViewHome",
+        "canViewManageUsers"
+      ]
+    },
+    
+    "Manager": {
+      "permissions": [
+        "canViewHome",
+        "canViewManageUsers",
+        "canEditUsers",
+        "canViewManageRoles",
+        "canEditRoles"
+      ]
+    },
+    "Admin": {
+      "permissions": [
+        "canViewHome",
+        "canViewManageUsers",
+        "canAddUsers",
+        "canEditUsers",
+        "canViewManageRoles",
+        "canAddRoles",
+        "canEditRoles"
+      ]
+    }
+  }
+}
+

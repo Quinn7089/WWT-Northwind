@@ -1,0 +1,125 @@
+// -----------------------------
+// Imports
+// -----------------------------
+@use 'vuetify/styles';
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700&display=swap');
+@import 'variables';
+
+// -----------------------------
+// Global Layout
+// -----------------------------
+body {
+  font-family: $font-family-primary;
+  color: rgb(var(--v-theme-on-background));
+  background-color: rgb(var(--v-theme-background));
+  margin: 0 auto;
+  padding: 0;
+  line-height: 1.6;
+}
+
+// Content containers
+.container {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+// Sections (clean content blocks)
+.section {
+  padding: 2.5rem 0;
+  background-color: rgb(var(--v-theme-surface));
+  border-bottom: 1px solid rgb(var(--v-theme-border));
+}
+
+// -----------------------------
+// Typography
+// -----------------------------
+h1, h2, h3, h4, h5, h6 {
+  color: rgb(var(--v-theme-primary));
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.6rem; }
+h3 { font-size: 1.3rem; }
+p  { margin-bottom: 1rem; }
+
+// -----------------------------
+// Links
+// -----------------------------
+a {
+  color: rgb(var(--v-theme-secondary));
+  text-decoration: none;
+  font-weight: 600;
+
+  &:hover {
+    text-decoration: underline;
+    color: rgb(var(--v-theme-primary));
+  }
+}
+
+// -----------------------------
+// Buttons (Vuetify style overrides)
+// -----------------------------
+.v-btn {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-radius: 8px;
+}
+
+.v-btn--contained {
+  background-color: rgb(var(--v-theme-primary));
+  color: #fff;
+
+  &:hover {
+    background-color: #0056A4; // slightly lighter blue
+  }
+}
+
+// -----------------------------
+// Cards / Surfaces
+// -----------------------------
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 62, 122, 0.1);
+  padding: 1.5rem;
+}
+
+// -----------------------------
+// Tables and Forms
+// -----------------------------
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+
+  th, td {
+    border: 1px solid rgb(var(--v-theme-border));
+    padding: 0.75rem;
+    text-align: left;
+  }
+
+  th {
+    background-color: rgb(var(--v-theme-surface));
+    color: rgb(var(--v-theme-primary));
+    font-weight: 600;
+  }
+}
+
+input, select, textarea {
+  border: 1px solid rgb(var(--v-theme-border));
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  font-family: inherit;
+  font-size: 1rem;
+
+  &:focus {
+    outline: none;
+    border-color: rgb(var(--v-theme-secondary));
+    box-shadow: 0 0 0 2px rgba(0, 119, 200, 0.2);
+  }
+}

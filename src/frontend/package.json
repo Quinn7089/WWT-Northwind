@@ -1,0 +1,37 @@
+{
+  "name": "clientapp",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20.11.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --fix",
+    "lint:check": "eslint .",
+    "clean": "rimraf dist",
+    "build:clean": "npm run clean && npm run build"
+  },
+  "dependencies": {
+    "vite-plugin-vuetify": "^2.1.2",
+    "vue": "^3.5.18",
+    "vue-router": "^4.5.1",
+    "vuetify": "^3.10.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^8.57.0",
+    "@mdi/font": "^7.4.47",
+    "@vitejs/plugin-vue": "^5.0.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-vue": "^9.19.0",
+    "globals": "^13.24.0",
+    "rimraf": "^5.0.0",
+    "sass": "^1.92.1",
+    "sass-loader": "^16.0.5",
+    "vite": "^5.4.0",
+    "vite-plugin-vue-devtools": "^7.4.0"
+  }
+}
