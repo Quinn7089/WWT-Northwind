@@ -16,6 +16,9 @@ obj
 *.pidb
 *.svclog
 *.scc
+*.appsettings.json
+*.appsettings.*.json
+*.readme.md
 
 # Visual Studio
 .vs/
